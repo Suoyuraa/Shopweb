@@ -146,65 +146,6 @@ section{
     margin-top: 60px;
   }
 
-  .gambar2 {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    flex-wrap: wrap;
-  }
-  
-  .card {
-    position: relative;
-    /* width: 200px; */
-    /* overflow: hidden; */
-    transition: transform 0.3s ease;
-    cursor: pointer;
-  }
-  
-  .card img {
-    width: 100%;
-    transition: transform 0.3s ease;
-    display: block;
-  }
-  
-  .caption {
-    position: absolute;
-    bottom: 10px;
-    width: 100%;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    opacity: 0;
-    transition: opacity 0.3s ease;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.7);
-    pointer-events: none;
-    font-size: 14px;
-  }
-  
-  /* Hover Effects */
-  .card:hover img {
-    transform: translateY(-10px);
-  }
-  
-  .card:hover .caption {
-    opacity: 1;
-  }
-  
-  .ganti1{
-    width: 410px;
-   height: 570px;      
-  }
-  
-  .ganti{
-    max-width: 320px;
-    height: 570px;
-    margin-right: 40px;
-  }
-  
-  .ganti2{
-    max-width: 360px;
-   margin-top: 40px;
-  }
 
   .about-company {
     width: 100%;
@@ -477,49 +418,68 @@ section{
     transform: scale(1.2);
   }
   
-  .sosial{
-    font-family: "Instrument Sans", sans-serif;
-    gap: 50px; 
-    transition: 0.5s ease; 
-    color: white;
-    text-align: center;
-    transition: 0.5s ease;
+  .gambar2 {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
   }
   
-  .sosial:hover{
-    transform: scale(1.2);
+  .product {
+    position: relative;
+    width: 250px;
+    height: 480px;
+    margin-top: 5rem;
+    overflow: hidden;
+    border-radius: 15px;
+    background-color: rgb(148, 148, 148);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.3);
   }
 
-  .tiktok{
-    font-family: "Instrument Sans", sans-serif;
-    gap: 50px; 
-    transition: 0.5s ease; 
-    color: white;
-    text-align: center;
-    margin-right: 30px;
-    transition: 0.5s ease;
-  }
-  
-  .tiktok:hover{
-    transform: scale(1.2);
+  .product img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    object-position: top; /* Tambahan opsional agar crop dari atas */
+    transition: transform 0.3s ease;
   }
 
-  .youtube{
-    font-family: "Instrument Sans", sans-serif;
-    gap: 50px; 
-    transition: 0.5s ease; 
+  .product:hover img {
+    transform: scale(1.05);
+  }
+  
+  .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: white;
+    opacity: 0;
+    transition: 0.3s ease;
+    padding: 20px;
     text-align: center;
-    margin-right: 10px;
-    transition: 0.5s ease;
   }
   
-  .youtube:hover{
-    transform: scale(1.2);
+  .product:hover .overlay {
+    opacity: 1;
   }
-
   
-  .icon{
-    color: #ffff;
+  .overlay-content h4 {
+    font-family: "Roboto", sans-serif;
+    font-size: 18px;
+    margin: 0;
   }
-    
+  
+  .overlay-content p {
+    font-family: "Roboto", sans-serif;
+    font-size: 14px;
+    margin-top: 8px;
+    line-height: 1.4;
+  }
+  
