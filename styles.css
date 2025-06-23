@@ -278,7 +278,7 @@ section{
     margin-top: 40px;
     margin-left: 7rem;
     width: 250px;
-    height: 250px;
+    height: 270px;
     border-radius: 40%;
   }
   
@@ -309,7 +309,7 @@ section{
   
   .bawahfoto{
     position: absolute;
-    margin-left: 10rem;
+    margin-left: 13rem;
   }
   
   .nama{
@@ -320,7 +320,7 @@ section{
   }
   
   .shop{
-    margin-left: 10px;
+    margin-left: -17px;
     font-size: 22px;
     font-weight: 100;
   }
@@ -421,7 +421,7 @@ section{
   .gambar2 {
     display: flex;
     justify-content: center;
-    gap: 30px;
+    gap: 50px;
     flex-wrap: wrap;
   }
   
@@ -451,10 +451,10 @@ section{
   
   .overlay {
     position: absolute;
-    top: 0;
+    bottom: 0;            /* Tampilkan di bagian bawah */
     left: 0;
     width: 100%;
-    height: 100%;
+    height: 40%;          /* Hanya bagian bawah */
     background: rgba(0,0,0,0.5);
     display: flex;
     justify-content: center;
