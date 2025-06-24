@@ -91,7 +91,7 @@
 
     h1{
         font-size: 75px;
-        font-family: "Julius Sans One", sans-serif;
+          font-family: "Kaushan Script", cursive;
         margin: 0;
     }
 
@@ -322,7 +322,7 @@
     .shop{
         margin-left: -17px;
         font-size: 22px;
-        font-family: "Julius Sans One", sans-serif;
+        font-weight: 700;
     }
     
     .biru{
@@ -492,6 +492,9 @@
       margin-left: auto;
       margin-right: auto;
     }
+    .shop{
+        margin-left: 5px;
+    }
     .tentang {
       margin-left: 2rem;
       margin-top: 2rem;
@@ -630,4 +633,4 @@
       padding: 1rem;
     }
   }
-  
+
