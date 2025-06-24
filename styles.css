@@ -488,6 +488,7 @@
 @media (max-width: 1200px) {
     .kotak {
       width: 90%;
+      height: 40%;
       margin-left: auto;
       margin-right: auto;
     }
