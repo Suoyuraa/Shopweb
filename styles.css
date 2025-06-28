@@ -688,7 +688,7 @@
 
 
 /* Responsive untuk iPhone 14 Pro Max */
-@media screen and (max-width: 430px) {
+@media screen and (max-width: 430px) and (max-height: 932px) {
 
   .header {
     padding: 50px 30px;
@@ -785,8 +785,7 @@
   }
 
   .About-owner{
-    z-index: 999;
-    height: 70rem;
+    height: 69rem;
     width: 100%;
     background: #b1ddff;
 }
@@ -805,7 +804,7 @@
   .footer .pertama,
   .footer .kedua,
   .footer .ketiga {
-   
+   display: inline;
   
   }
 
