@@ -15,20 +15,28 @@
 </head>
 <body>
 
+  <nav class="sidebar">
+    <button class="keluar" onclick=hideSidebar() href="#"><i class='bx bx-x' style='font-size: 28px;'></i></button>
+    <a href="#home">Home</a>
+    <a href="#about">Products</a>
+    <a href="#About Company">About Company</a>
+    <a href="#About Owner">About Owner</a>
+  </nav>
+
   <header class="header">
     <a href="#" class="logo">SHOPWEB</a>
-
-    <nav class="navbar">
-      <a href="#home">Home</a>
-      <a href="#about">Products</a>
-      <a href="#About Company">
-        About Company</a>
-      <a href="#About Owner">About Owner</a>
-  </nav>
-                <!-- UNTUK HREF NYA HARUS SAMA DENGAN ID YANG DI BAWAH AGAR BISA TERPANGGIL-->
     
-</header>
+    <nav class="navbar">
+      <a class="hideOnMobile" href="#home">Home</a>
+      <a class="hideOnMobile" href="#about">Products</a>
+      <a class="hideOnMobile" href="#About Company">About Company</a>
+      <a class="hideOnMobile" href="#About Owner">About Owner</a>
+      <button class="menu" onclick= showSidebar() href="#"><i class='bx bx-menu'  style='font-size: 28px;' ></i></button>
+    </nav>
+  </header>
+  
 
+<!-- UNTUK HREF NYA HARUS SAMA DENGAN ID YANG DI BAWAH AGAR BISA TERPANGGIL-->
 
 <section id="home" class="home">
 
@@ -90,15 +98,7 @@
           </div>
         </div>
       </div>
-      <div class="product">
-        <img src="gambarweb5.png" alt="Design Studio">
-        <div class="overlay">
-          <div class="overlay-content">
-            <h4>Nature Campaign</h4>
-            <p>Kampanye pelestarian lingkungan dengan informasi interaktif dan visual yang bersih.</p>
-          </div>
-        </div>
-      </div>
+  
 
     </div>
   </div>
@@ -199,8 +199,8 @@
         <div class='ig'>
           <ul>
           <li><a href='https://www.instagram.com/muh.oshei.ss/?next=%2F' target="_blank"><i class='bx bxl-instagram'></i>Instagram</a></p></li>
-        <li><a  href='https://www.tiktok.com/@i_am_here_mahiro' target="_blan"><i class='bx bxl-tiktok'></i>Tiktok</a></li>
-        <li><a  href='https://www.youtube.com/' target="_blank"><i class='bx bxl-youtube' ></i>Youtube</a></li>
+          <li><a  href='https://www.tiktok.com/@i_am_here_mahiro' target="_blan"><i class='bx bxl-tiktok'></i>Tiktok</a></li>
+          <li><a  href='https://www.youtube.com/' target="_blank"><i class='bx bxl-youtube' ></i>Youtube</a></li>
         </ul>
           </div>
       
@@ -211,6 +211,37 @@
       function toggleVisi(el) {
         el.classList.toggle('open');
       }
+      function showSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'flex'
+        }
+        function hideSidebar(){
+            const sidebar = document.querySelector('.sidebar')
+            sidebar.style.display = 'none'
+        }
+
+  // document.addEventListener('DOMContentLoaded', function () {
+  //   const menuIcon = document.getElementById('menu-icon');
+  //   const navbar = document.querySelector('.navbar');
+
+  //   if (menuIcon && navbar) {
+  //     menuIcon.addEventListener('click', function () {
+  //       navbar.classList.add('active');
+  //     });
+
+  //     const closeBtn = document.createElement('div');
+  //     closeBtn.classList.add('close-btn');
+  //     closeBtn.innerHTML = '&times;';
+  //     navbar.prepend(closeBtn);
+
+  //     closeBtn.addEventListener('click', function () {
+  //       navbar.classList.remove('active');
+  //     });
+  //   }
+  // });
+
+
+
     </script>
   
 </body>
