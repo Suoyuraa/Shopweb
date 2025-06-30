@@ -1004,7 +1004,7 @@
   }
 
   .About-owner{
-    height: 85rem;
+    height: 88rem;
     width: 100%;
     background: #b1ddff;
 }
@@ -1014,7 +1014,19 @@
   border-radius: 20px;
 }
 
+.nama{
+  font-weight: 500;
+}
+
+
+.shop{
+  font-size: 20px;
+  margin-right: 5px;
+  font-weight: 500;
+}
+
 .biru{
+  margin-right: 30px;
   color: #0C57F9;
   font-size: 24px;
 }
@@ -1022,13 +1034,25 @@
 .hitam1,
 .hitam3{
   font-size: 22px;
+  margin-right: 30px;
 }
+
+      .profile{
+        padding-top: 10px ;
+        margin-bottom: 20px;
+        font-size: 40px;
+        font-size: 30px;
+    }
+
+
 
   .hitam2{
     display: none;
   }
 
+  
   .hitam22{
+    margin-right: 30px;
     display: block;
     font-size: 22px;
     color: #000000;
@@ -1037,7 +1061,7 @@
   }
 
   .footer {
-    margin-top: 35rem;
+    margin-top: 37rem;
     padding: 2rem;
    
   }
